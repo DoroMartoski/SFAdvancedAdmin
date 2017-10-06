@@ -31,10 +31,10 @@ Report subscription notification types: send a salesforce1 in-app notification, 
 email notification or execute a custom apex action such as creating tasks or escalating cases.
 
 **Importing data in salesforce:**
-** Data import wizard - lets you import data in common standard objects as well as custom objects.
+* Data import wizard - lets you import data in common standard objects as well as custom objects.
 Import up to 50,000 records at a time.
 
-** Data loader - can import up to 5 million records at a time, of any data type either from files or database
+* Data loader - can import up to 5 million records at a time, of any data type either from files or database
 connection. Can be done through user interface or the command line.This makes it possible to automate 
 the import process, using API calls.
 Data export - export now or schedule export.
@@ -42,22 +42,22 @@ Data export wizard allows you to export data manually once every six days for we
 for monthly export.
 
 ### Object relationships:
-** Look-up relationship - links one object to another object and allows you to navigate from records in one 
+* Look-up relationship - links one object to another object and allows you to navigate from records in one 
 object to the related records in another object. Used to create one to one and one to many relationships.
 
-** Master-Detail - creates a parent-child or master-detail relationship between two objects. Tightly linked the master record controls certain behaviors of the detail and sub-detail record. Ownership and sharing
+* Master-Detail - creates a parent-child or master-detail relationship between two objects. Tightly linked the master record controls certain behaviors of the detail and sub-detail record. Ownership and sharing
 of detail records are determined by the master record - when you delete the master record, all of its detail
 records are automatically deleted along with it. **Master-detail relationship fields are always required
 on the detail records.
 * Master object in master-detail relationshipcan also contain roll-up summary fields. These fields store 
 values aggregated from the child records in the relationship.
 
-** You can't create a detail record without a master record. The detail record inherits sharing rules
+* You can't create a detail record without a master record. The detail record inherits sharing rules
 from the master. The number of master-detail relationship you can set are limited depending on your 
 edition or license. You can't set profile permissions for a detail record.**
 * You can convert a master-detail relationship to a lookup relationship as long as no roll-up summary
 fields exist on the master object.**
-** You can convert a lookup relationship to a master-detail relationship only if the lookup fields on 
+* You can convert a lookup relationship to a master-detail relationship only if the lookup fields on 
 the records contains a value.
 
 ### Forecasting
