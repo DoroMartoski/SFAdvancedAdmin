@@ -45,31 +45,30 @@ for monthly export.
 ** Look-up relationship - links one object to another object and allows you to navigate from records in one 
 object to the related records in another object. Used to create one to one and one to many relationships.
 
-** Master-Detail - creates a parent-child or master-detail relationship between two objects. Tightly linked
-- the master record controls certain behaviors of the detail and sub-detail record. Ownership and sharing
+** Master-Detail - creates a parent-child or master-detail relationship between two objects. Tightly linked the master record controls certain behaviors of the detail and sub-detail record. Ownership and sharing
 of detail records are determined by the master record - when you delete the master record, all of its detail
 records are automatically deleted along with it. **Master-detail relationship fields are always required
 on the detail records.
-**Master object in master-detail relationshipcan also contain roll-up summary fields. These fields store 
+* Master object in master-detail relationshipcan also contain roll-up summary fields. These fields store 
 values aggregated from the child records in the relationship.
 
 ** You can't create a detail record without a master record. The detail record inherits sharing rules
 from the master. The number of master-detail relationship you can set are limited depending on your 
 edition or license. You can't set profile permissions for a detail record.**
-** You can convert a master-detail relationship to a lookup relationship as long as no roll-up summary
+* You can convert a master-detail relationship to a lookup relationship as long as no roll-up summary
 fields exist on the master object.**
 ** You can convert a lookup relationship to a master-detail relationship only if the lookup fields on 
 the records contains a value.
 
 ### Forecasting
 Forecast is an expression of expected sales revenue based on the gross rollup of a set of opportunities.
-**The forecast amounts shown on the forecast tab are totals and subtotals of the opportunities in the 4 forecast categories => Pipeline,
+* The forecast amounts shown on the forecast tab are totals and subtotals of the opportunities in the 4 forecast categories => Pipeline,
 Best case, commit and closed.
 Forecasts amounts in the rollup table are organized by forecast rollup, time period and optionally product family.
 Forecasts can include adjustments made by forecast managers to their immediate subordinates' forecasts as well as adjustments made forecast 
 users to their own forecast amounts.
 Admins can enable up to 4 different types of forecast at the same time.
-** Users can view forecast amounts and their related opportunities by forecast rollup for an individual or for everyone below them in 
+* Users can view forecast amounts and their related opportunities by forecast rollup for an individual or for everyone below them in 
 the forecast hierarchy.
 Collaborative Forecasts => Predict sales revenue and quantities from your opportunity pipeline and incorporate product families, opportunity
 splits, and custom opportunity currency fields if needed.
@@ -77,21 +76,21 @@ Predict and plan the sales cycle from pipeline to closed sales and manage sales 
 Collaborative forecast.
 
 **Use collaborative forecast to perform tasks such as:**
-** See forecast summaries for each product family.
-** See split percentages and split amounts that contribute to each forecast.
-** View and use the list of opportunities related to each forecast amount you select. Access opportunity details directly from this list.
-** Make adjustments and view adjustment details such as the original adjustment details and who made the adjustments. Each forecast type
+* See forecast summaries for each product family.
+* See split percentages and split amounts that contribute to each forecast.
+* View and use the list of opportunities related to each forecast amount you select. Access opportunity details directly from this list.
+* Make adjustments and view adjustment details such as the original adjustment details and who made the adjustments. Each forecast type
 maintains its own separate adjustments.
-** If you are a forecast manager, move up and down the hierarchy easily.
-** View revenue or quantity based forecasts.
-** View forecasts in multiple currencies. 
-** View quota information on each user's forecast page. If multiple forecasts are enabled each forecast type maintains its own separate 
+* If you are a forecast manager, move up and down the hierarchy easily.
+* View revenue or quantity based forecasts.
+* View forecasts in multiple currencies. 
+* View quota information on each user's forecast page. If multiple forecasts are enabled each forecast type maintains its own separate 
 quota information.
 ** Include the opportunities of your partner portal users in your forecasts.
  
 **When migrating from Customizable forecasting to collaborative, note**:
-** Forecast history, overides, reports and sharing data from customizable forecasting are purged so consider exporting those data prior
+* Forecast history, overides, reports and sharing data from customizable forecasting are purged so consider exporting those data prior
 to migration.
-** Default Collaborative forecast period is monthly - you can however change the setting to quarterly. If you use custom fiscal year then 
+* Default Collaborative forecast period is monthly - you can however change the setting to quarterly. If you use custom fiscal year then 
 your fiscal period is the default.
-** The forecast hierarchy is retained.
+* The forecast hierarchy is retained.
