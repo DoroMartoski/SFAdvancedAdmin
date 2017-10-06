@@ -1,4 +1,22 @@
 App - a set of fields, objects, permissions and functions to support a business process.
+
+**Lightning apps let you brand your apps with a custom color and logo and include a utility bar and lightning page tabs**
+
+**A lightning app can contain:**
+* Most standard objects
+* Custom objects
+* Visualforce tabs
+* Lightning component tabs
+* Canvas apps via Visualforce tabs
+* Web tabs
+
+**Use the App Manager to create and manage your tools**
+
+### Compact Layouts
+* Controls which fields users see in the highlights panel at the top of a record.
+* Also controls the fields that appear in the expanded lookup card when one hovers over a link in record details.
+
+
 Identify processes that involves manual processing, emaail driven, teams using spreadsheets to function and documents shared on local machines as some of the processes to move into SF.
 Summary reports are similar to tabular reports, but also allows users to group rows of data, view subtotals 
 and create charts.
@@ -49,16 +67,22 @@ object to the related records in another object. Used to create one to one and o
 of detail records are determined by the master record - when you delete the master record, all of its detail
 records are automatically deleted along with it. **Master-detail relationship fields are always required
 on the detail records.
-* Master object in master-detail relationshipcan also contain roll-up summary fields. These fields store 
+* Master object in master-detail relationship can also contain roll-up summary fields. These fields store 
 values aggregated from the child records in the relationship.
 
 * You can't create a detail record without a master record. The detail record inherits sharing rules
 from the master. The number of master-detail relationship you can set are limited depending on your 
-edition or license. You can't set profile permissions for a detail record.**
+edition or license. You can't set profile permissions for a detail record.
 * You can convert a master-detail relationship to a lookup relationship as long as no roll-up summary
-fields exist on the master object.**
+fields exist on the master object.
 * You can convert a lookup relationship to a master-detail relationship only if the lookup fields on 
 the records contains a value.
+* The master object controls the access to the detail's data.
+* When creating master-detail relationship, always create the relationship field on the detail object.
+
+**Hierarchical relationship: available only on the user object for creating management chains between users**
+
+**Schema builder: lets you visualize and edit your data model**
 
 ### Forecasting
 Forecast is an expression of expected sales revenue based on the gross rollup of a set of opportunities.
