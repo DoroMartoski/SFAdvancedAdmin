@@ -12,6 +12,9 @@ App - a set of fields, objects, permissions and functions to support a business 
 
 **Use the App Manager to create and manage your tools**
 
+**In lightning, a page's layout can be customized or it's contents customized. This is done using separate tools.**
+**Lightning pages are a collection of lightning components arranged in regions on the page.**
+
 ### Compact Layouts
 * Controls which fields users see in the highlights panel at the top of a record.
 * Also controls the fields that appear in the expanded lookup card when one hovers over a link in record details.
@@ -118,3 +121,13 @@ to migration.
 * Default Collaborative forecast period is monthly - you can however change the setting to quarterly. If you use custom fiscal year then 
 your fiscal period is the default.
 * The forecast hierarchy is retained.
+
+## Salesforce CRM Content
+**Instead of file folders that are harder to search, CRM content stores files in fully searchable file repos called libraries.**
+* Multiple libraries can be created based on classifications such as dept name, job function etc.
+* User permissions can be created within the libraries to manage security.
+* Authors can add descriptive labels or tags to help classify and organize content across libraries. Tags can be used as search filters
+* Private libraries which allow users to reduce their desktop clutters can also be created.
+* Benefit of CRM Content/ content management is document search and version control.
+* CRM Content searches the entire body of the document as well as content properties such as title, description, author name and tags.
+### Sear
