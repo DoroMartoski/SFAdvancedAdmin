@@ -130,4 +130,28 @@ your fiscal period is the default.
 * Private libraries which allow users to reduce their desktop clutters can also be created.
 * Benefit of CRM Content/ content management is document search and version control.
 * CRM Content searches the entire body of the document as well as content properties such as title, description, author name and tags.
-### Sear
+
+Library => Contribute => choose file to upload => Add title, description, tags and choose library to publish to => 
+Record type if needed => publish
+### Searching
+* Scans the entire body of the document as well as the content properties such as title, description, tags etc.
+* Content searches can be filtered based on file format, author, tags, libraries, and custom fields
+* Search can also be filtered by chatter files.
+
+### Subscribing
+* Files can be subscribed to for alerts on changes.
+* User can also subscribe to an author, tags, and libraries.
+
+### Previewing
+* MS PPt, excel, or Adobe PDF files can be entirely previewed in the browser without downloading
+* Copy protected files cannot be previewed
+
+* Simply upload a new version of the file and SF CRM maintains a version list accessible from the content details page.
+* Featuring a piece of content increases its visibility in search results
+* You can see who has subscribed to a file, link, or doc and how many times files have been downloaded.
+* * If content delivery is enabled, you can send content to colleagues, leads, and contacts and track how often the content has been downloaded.
+* If content is enabled on an object, the CRM content uses the fields on the object detail page to search for files that may be relevant to that object record.
+* Salesforce CRM Content user license must be given to a user for them to access contents. This is a checkbox on the user page
+* There are 3 tagging rules: restricted (doesn't allow the author to create new tags), guided tagging, and open tagging.
+
+
