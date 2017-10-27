@@ -154,4 +154,18 @@ Record type if needed => publish
 * Salesforce CRM Content user license must be given to a user for them to access contents. This is a checkbox on the user page
 * There are 3 tagging rules: restricted (doesn't allow the author to create new tags), guided tagging, and open tagging.
 
+**Users can vote thumps up or down on files or links or google doc**
+
+### Content delivery
+* Allows you to easily convert docs into optimized web-based versions for easy online viewing.
+* Creates encrypted URL to any recipient such as leads, customers, partners.
+* this can then be tracked to know how often the content is viewed or downloaded.(available only in classic- lightning email is its equivalent in lightning).
+* you can create a new delivery for a content or view all the deliveries associated with it.
+* you can allow users to publish, edit and search for content in any of the 20 salesforce supported languages.
+* If a user does not choose a language when publishing content, the content is asssociated with the user's personal language by default.
+* if the user's personal language is different from the organization's language, content published by the user is associated with the user's language, not the organization's language.
+
+### Content packs
+* This is a collection of related documents or files that are stored as a group in Salesforce CRM Content.
+
 
