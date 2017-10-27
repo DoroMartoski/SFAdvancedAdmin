@@ -164,8 +164,13 @@ Record type if needed => publish
 * you can allow users to publish, edit and search for content in any of the 20 salesforce supported languages.
 * If a user does not choose a language when publishing content, the content is asssociated with the user's personal language by default.
 * if the user's personal language is different from the organization's language, content published by the user is associated with the user's language, not the organization's language.
+* Enable content delivery by choosing the Enable Creation of Content Deliveries for Salesforce files under the Content Deliveries section in Setup.
 
 ### Content packs
 * This is a collection of related documents or files that are stored as a group in Salesforce CRM Content.
-
+* Total number of content delivery views allowed in 24 hour period is 20k.
+* Total number of bandwidth allocated to content deliveries is limited to 20gb with a 24 hour period - after this users receive a rate limit has been exceeded notification.
+* content delivery can be created with any file type - if the file type is not supported for online viewing, your recipient can only download the document in its original format. Important to preview your documents before before sending the URL to recipients.
+* Customer portal and partner portal users cannot create content deliveries.
+* Only the creator of a content delivery can delete the delivery record or edit details such as the expiration date.
 
