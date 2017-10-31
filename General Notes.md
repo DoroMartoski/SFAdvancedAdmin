@@ -187,3 +187,24 @@ Record type if needed => publish
 * For each record type you want to allow in the library, move it from the Available Record types list to the Selected Record type list. and then save.
 * If the library already contains published content, selecting the Restrict the record types available in the library option automatically moves all the record types used by the published content to the selected Record types list.
 * Deselecting the Restrict the Record types available in the library option automatically moves any record types in the Selected Record types list to the available record types list
+* When changing a file's managing library, the record type of the file must be permitted in the new managing library.
+* When sharing a file with a library, the file's record type must be permitted in the shared library unless the **Allow content with any record type to be linked to this library** option is selected for the shared library.
+* when the default record type for a user's profile differs from the default record type for a library, the user profile default takes priority when a user with that profile shares a file with the library.
+* When there are no record types in commong between a user profile and a library, the default record type for a library is available to users with that user profile who are sharing files with the library.
+
+**Create folders in lightning experience to organize files already in libraries. Upload files to a library by selecting the library and then clicking add files.**
+**Switch to classic to create libraries.**
+
+### Tagging
+* Tags are descriptive labels to help classify & organize content.
+* Assign tagging rules to a library by => My libraries => select library => click tagging rules => choose type of tagging rule.
+* Open tagging: Contributors are free to enter any tags when publishing or editing content. This is the default tagging rule.
+* Guided tagging: this rule also enables contributors to enter any tag when publishing or editing content but contributors are also offered a list of suggested tags.
+* Restricted tagging: this rule requires contributors to choose from the list of suggested tags.
+
+* Portal users without a Salesforce CRM Content feature license can download, rate, comment on, and subscribe to content if they
+have the “View Content on Portals” user permission. They cannot view potentially sensitive data such as usernames, download
+history, and version history. The content delivery feature is not available to portal users.
+* Portal users with a Salesforce CRM Content feature license can access all Salesforce CRM Content features granted by their library
+permission(s), including contributing content, moving and sharing content among libraries, and deleting content. They can also
+view Salesforce CRM Content reports. The content delivery feature is not available to portal users.
