@@ -165,6 +165,7 @@ Record type if needed => publish
 * If a user does not choose a language when publishing content, the content is asssociated with the user's personal language by default.
 * if the user's personal language is different from the organization's language, content published by the user is associated with the user's language, not the organization's language.
 * Enable content delivery by choosing the Enable Creation of Content Deliveries for Salesforce files under the Content Deliveries section in Setup.
+* Best practice to require password protection on content delivery if your users will be sending confidential documents through content delivery. **3 password options through Org-wide default** => Password protection is optional and defaults to off, Password protection is optional and defaults to ON and lastly Password protection is required (with this option, Password is generated each time a content delivery is created - users cannot opt out of the password requirement.
 
 ### Content packs
 * This is a collection of related documents or files that are stored as a group in Salesforce CRM Content.
@@ -174,3 +175,13 @@ Record type if needed => publish
 * Customer portal and partner portal users cannot create content deliveries.
 * Only the creator of a content delivery can delete the delivery record or edit details such as the expiration date.
 
+### Enabling Google Docs
+* Enable the Add Google Docs to Salesforce service. This allows users to use the Add Google Doc drop-down list on the libraries tab to add Google docs, spreadsheets and presentations to their CRM Content Libraries.
+* You must have a Google App account and configure that accounts domain settings
+
+### Restricting Record types in Library
+* My libraries => Record types => restrict the record types available in the library checkbox => select either one or both of 
+ * Allow content with any record type to be linked to this library
+ * Do not apply record type restrictions to existing content
+ 
+* For each record type you want to allow in the library, move it from the Available Record types list to the Selected Record type list. and then save.
