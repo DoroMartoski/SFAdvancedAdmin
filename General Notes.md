@@ -181,7 +181,9 @@ Record type if needed => publish
 
 ### Restricting Record types in Library
 * My libraries => Record types => restrict the record types available in the library checkbox => select either one or both of 
- * Allow content with any record type to be linked to this library
- * Do not apply record type restrictions to existing content
+  * Allow content with any record type to be linked to this library
+  * Do not apply record type restrictions to existing content
  
 * For each record type you want to allow in the library, move it from the Available Record types list to the Selected Record type list. and then save.
+* If the library already contains published content, selecting the Restrict the record types available in the library option automatically moves all the record types used by the published content to the selected Record types list.
+* Deselecting the Restrict the Record types available in the library option automatically moves any record types in the Selected Record types list to the available record types list
