@@ -37,7 +37,13 @@
 * Add Territory field to the opportunity page layout
 * Give users the **Manage territories** permission to be able to administer territory hierarchies. **Users that had the “Customize Application” permission before you enabled territory management are automatically given the “Manage Territories” permission.**
 **Territories can have unlimited number of users and users can be in unlimited number of territories.**
-
+*  If “Allow Forecasting” is disabled for a user who is deactivated, the user is removed from any territories he or she is assigned to
+**Rollup amounts are kept current for deactivated Salesforce users**
+**A deactivated salesforce user can continue to own opportunities and belong to territories**
+* Users with Active in Territory checked on the territory detail page have open opportunities, closed opportunities, or no
+opportunities at all in that territory. Users with Active in Territory deselected have been transferred out of or removed
+from the territory, but retain ownership of opportunities in the old territory.
+* To view the territories to which you belong, view the Territories related list on your personal information page
 
 
 
