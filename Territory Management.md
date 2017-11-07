@@ -24,4 +24,10 @@
 ### Territory management and forecasting
 * The territory hierarchy becomes the forecast hierarchy.
 * The forecast data is derived from the opportunities that are associated with the accounts in the territory.
-* Users have a different forecast for each territory they are assigned.
+* Users have a different forecast for the opportunities they have for each account territory they are assigned to.
+* Field security and page layout determine which territory fields are visible and editable.
+
+### Territory fields:
+* Account access, case access, confine opportunity assignment, contact access, forecast manager, label, opportunity access, 
+
+
