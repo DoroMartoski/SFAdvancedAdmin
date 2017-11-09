@@ -40,10 +40,47 @@
 *  If “Allow Forecasting” is disabled for a user who is deactivated, the user is removed from any territories he or she is assigned to
 **Rollup amounts are kept current for deactivated Salesforce users**
 **A deactivated salesforce user can continue to own opportunities and belong to territories**
+**For deactivated salesforce users their opportunity forecast overrides, adjusted  total overrides and manager's choice overrides are frozen**
 * Users with Active in Territory checked on the territory detail page have open opportunities, closed opportunities, or no
 opportunities at all in that territory. Users with Active in Territory deselected have been transferred out of or removed
 from the territory, but retain ownership of opportunities in the old territory.
 * To view the territories to which you belong, view the Territories related list on your personal information page
+
+**A territory can have only one forecast manager to whom the forecasts from child and lower level territories roll up to.**
+**If a territory has no forecast manager, then there is no forecast for that territory.**
+**You can enable forecast managers to act as delegated administrator for the territories below them.**
+
+### FAQS
+* Accounts, opportunities and users have territory fields. Accounts and user can have multiple territories but an opportunity can only be assigned to one territory.
+* Territory hierarchy determines forecasts and affects account and opportunity reports.
+* Manually assigned accounts to territories are not evaluated when running account assignment rules. They remain in the territory until they are manually removed.
+
+### Account Assignment rules evaluation
+* Account is created using the Salesforce user interface, API 20.0 or through a client
+* Account is imported through an import wizard.
+* An account is created by the conversion of a lead.
+* An account is editted and saved if the *select by default* checkbox is selected for the "Evaluate this account against territory rules on save" checkbox under the layout properties.
+* An account is edited and saved via the force.com API
+* Run rules is clicked on the territory detail page as long as the "Exclude from territory assignment rules" checkbox on the account is deselected.
+* Save and run rules is clicked on the manage account assignment rules page for a territory.
+* Duplicate accounts are merged.
+
+### Opportunity territory assignment
+* Creating a new opportunity
+* Running account assignment rules
+
+### Opportunity not assigned to territories when
+* An account is removed from a territory and not reassigned to a new one in the same operation => accounts' opportunities no longer belong to any territories.
+* An account is reassigned to multiple territories in one operation => the account's opportunities from the original territory no longer belong to any territories, unless the "confine opportunity assignment" checkbox is checked.
+
+### when are opportunity territories unchanged
+**Manually assigning the opportunity's account to a territory**
+**Changing which account is associated with the opportunity**
+**Changing the account's territory as a result of account assignment rules if the opportunity and its account are in different territories**
+**Transferring the opportunity to a new owner**
+
+**If an opportunity owner does not belong to the opportunity territory, the owner gets automatically assigned to the opportunity territory with "Active in Territory" unchecked in the Assigned Users list of the territory**
+
 
 
 
