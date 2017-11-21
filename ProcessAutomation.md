@@ -8,11 +8,11 @@
 
 * Create approval processes to automate your organizations processes fro approving records.
 
-**Workflow and approval process can update only the record or its parent but process builder can update any related record whereas visual workflow can update any record**
-**Except Approval processes all the other process automation support time based actions**
-**Only visual workflow supports user interaction**
-**Visual workflow and process builder can create any object record whereas workflow and approval process can create only task records.**
-**Process builder can invoke processes.**
-**Only visual workflow can delete records**
-**Process builder and visual workflow can post to chatter**
-**Visual workflow can send emails but process builder, approval processes and workflows can send email alerts only.**
+* **Workflow and approval process can update only the record or its parent but process builder can update any related record whereas visual workflow can update any record**
+* **Except Approval processes all the other process automation support time based actions**
+* **Only visual workflow supports user interaction**
+* **Visual workflow and process builder can create any object record whereas workflow and approval process can create only task records.**
+* **Process builder can invoke processes.**
+* **Only visual workflow can delete records**
+* **Process builder and visual workflow can post to chatter**
+* **Visual workflow can send emails but process builder, approval processes and workflows can send email alerts only.**
