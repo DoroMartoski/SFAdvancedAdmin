@@ -16,3 +16,8 @@
 * **Only visual workflow can delete records**
 * **Process builder and visual workflow can post to chatter**
 * **Visual workflow can send emails but process builder, approval processes and workflows can send email alerts only.**
+
+### Process Builder
+**Consists of:**
+* Criteria
+* Immediate and scheduled actions to execute when those criteria are met
