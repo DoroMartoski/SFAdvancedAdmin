@@ -208,3 +208,19 @@ history, and version history. The content delivery feature is not available to p
 * Portal users with a Salesforce CRM Content feature license can access all Salesforce CRM Content features granted by their library
 permission(s), including contributing content, moving and sharing content among libraries, and deleting content. They can also
 view Salesforce CRM Content reports. The content delivery feature is not available to portal users.
+
+**Price Book, Product Schedules and Opportunity Products**
+* Product is an individual item or service to be sold to customers through opportunities or quotes.
+* Product must be associated with an active price book (if it is to be added in opportunities)
+* Product can exist in multiple price book.
+
+**Price Book and Price Book Entry**
+* Standard and list prices for your products for a specific market
+
+**Price Book**
+* Must have at least one active price book before you can sell a product.
+* SFDC provides a default standard price book
+
+**Price book entry**
+* Holds products standard prices and (custom) list prices that you intend to charge against the active price books
+* An associated (junction) entity to products and price book.
