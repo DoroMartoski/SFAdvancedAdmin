@@ -224,3 +224,14 @@ view Salesforce CRM Content reports. The content delivery feature is not availab
 **Price book entry**
 * Holds products standard prices and (custom) list prices that you intend to charge against the active price books
 * An associated (junction) entity to products and price book.
+
+**Opportunity Product**
+* A line item of a product or service that you associated with an opportunity.
+* Opportunity products appear as a related list in opportunity details.
+* An opportunity can only contain one price book.
+
+**Product Schedules**
+* Set up **revenue schedule** if revenue will be realized over a period of time but the product or service be delivered all at once.
+* Set up **quantity schedule** if revenue (payment) will be made all at once but the product or service be delivered in installments.
+* Set up **default schedule** if the same schedule applies to all customers.
+* 
