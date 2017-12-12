@@ -88,7 +88,29 @@ the records contains a value.
 **Schema builder: lets you visualize and edit your data model**
 
 ### Forecasting
-Forecast is an expression of expected sales revenue based on the gross rollup of a set of opportunities.
+**Forecast is an expression of expected sales revenue based on the gross rollup of a set of opportunities.**
+**Collaborative Forecasting is ideal if your organization wants these features:**
+* Forecast revenue and/or quantity based on opportunity data
+* Forecast viewable in monthly or quarterly rollups
+* Customizable forecast categories
+* Mutually exclusive forecast categories
+* Forecast numbers and related Opportunities on the same page
+* Manager ability to adjust forecasts
+* Revenue or quantity quotas for sales teams (via API only)
+* Ability to create Custom Report Types & Custom Reports on Forecast, Opportunity & Quota data & API support
+* Interactive and easy user experience
+ 
+**Customizable Forecasting is ideal if your organization has enabled either Territory Management 1.0 or Custom Fiscal Years, or if your organization wants these features:**
+* Product Family Forecasts
+* Opportunity Products Schedule Forecasts
+* Forecast Sharing
+* Forecast Snapshots & History
+* Opportunity-level Adjustments
+* Opportunity Product Level Adjustments
+* Ability to Override Forecast Category
+* Ability for Sales Reps to adjust their Forecast
+
+
 * The forecast amounts shown on the forecast tab are totals and subtotals of the opportunities in the 4 forecast categories => Pipeline,
 Best case, commit and closed.
 Forecasts amounts in the rollup table are organized by forecast rollup, time period and optionally product family.
@@ -235,3 +257,18 @@ view Salesforce CRM Content reports. The content delivery feature is not availab
 * Set up **quantity schedule** if revenue (payment) will be made all at once but the product or service be delivered in installments.
 * Set up **default schedule** if the same schedule applies to all customers.
 * 
+
+
+### Delegated Administration
+* Use delegated administration to assign limited administrative rights to users E.g You can create a delegated admin to manage users of a certain role that have been assigned to the delegated admin group the admin has been added.
+**Delegated admin can:**
+* Create and edit users in specified roles and all subordinate roles that have been assigned to the delegated admin group the admin has been added.
+* Unlock users and log in as users who have granted login access to the admin.
+* Assign users to specified profiles and permissions that have been assigned to the delegated admin group the admin has been added.
+* Create public groups and manage membership in specified public groups.
+* Manage custom objects and customize neary every aspect of a custom object(s) that have been assigned to the delegated admin group the admin has been added but can't create or modify relationships on the object or set org-wide sharing defaults.
+* Administer users across all delegated groups to which the delegated admin is assigned.
+
+**Delegated Admin cannot: assign profiles or permission sets with "Modify All Data" permission, can't modify permission sets, see the "None Specified option when selecting a role for new users"** **need access to custom objects to access the merge fields on those objects from formulas**
+
+
