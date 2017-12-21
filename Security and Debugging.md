@@ -37,5 +37,5 @@
 * As a developer Validate an application's behavior
 * As an admin to troubleshoot when a user reports difficulty by setting up a trace flag on the user and asking the user to step through the problematic transactions and then use the debug log to view the system details.
 
-### Data Security
+### Data Security:
 
