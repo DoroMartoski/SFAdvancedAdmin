@@ -258,6 +258,10 @@ view Salesforce CRM Content reports. The content delivery feature is not availab
 * Set up **default schedule** if the same schedule applies to all customers.
 * 
 
+### Quotes and Contracts
+**Sync quote to prevent discrepancies between the line items on the quote and the products in the related opportunity.**
+**Create quote template to be used to generate PDFs of the quote to be sent to customers**
+**Use Contracts to set the terms of doing business with other companies - use field level security and field accessibility (not page layout) to include a contract on opportunity details**
 
 ### Delegated Administration
 * Use delegated administration to assign limited administrative rights to users E.g You can create a delegated admin to manage users of a certain role that have been assigned to the delegated admin group the admin has been added.
