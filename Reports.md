@@ -17,7 +17,12 @@ or matrix and should have a chart.**
 
 
 ### Cross filters
-**Cross filters filter results by related objects whereas field filters limit results by the values of fields**
+* **Cross filters filter results by related objects whereas field filters limit results by the values of fields**
+* **Cross filters let you filter the parent records in a report by their related child records, using WITH or WITHOUT conditions.**
 **Subfilters can then be added on cross filters to further filter by fields on the child object**
-* Up to 5 subfilters can be created.
+* Up to 3 cross filters in a report and Up to 5 subfilters per each cross filter can be created.
 * Cross filters have an AND relationship with the report type
+
+### Bucketing:
+* Can only be used with Number, picklist and text fields.
+* Up to 20 buckets can be created.
