@@ -8,4 +8,4 @@
  * **Entitlement: a unit of customer support in Salesforce such as phone support or web support.**
   * Entitlements can be associated with accounts, assets, contacts and service contracts.
   * Entitlement contacts: contacts who are entitled to customer support. Contacts related list on an entitlement shows which contacts are eligible for that entitlement.
-  - Contact
+      - Contact
