@@ -74,4 +74,33 @@ Global value sets:
 * **If you find that a particular set of values for one field makes a good set for another field, you can promote the existing value set to a global value set.** 
 
 
+### Enhanced Transaction Security
+* A salesforce feature that monitors Salesforce events in real time to spot potential troubles based on rules you create.
+* Create policies that consists of events, notifications, and actions
+
+* **Event**: any action in Salesforce including user clicks, record state changes and measuring values. Immutable and timestamped
+* Pick a transaction or event to monitor and then choose actions that are triggered when the event occurs.
+* The rules & actions you create for a Transaction Security is referred to as policies.
+* Transaction security policies can be extended with Apex for customized protection.
+* **To use Transaction Security, you have to first purchase a Salesforce Shield or Salesforce Shield Event Monitoring add-on subscription.**
+
+Examples of available event types for Transaction Security policies
+* API Event for monitoring and protecting all API queries. Prevents unauthroized data exports
+* List View Event for access to list views. Tracks user's access to list views from both UI and API queries.
+* Login Event monitoring. Blocks logins from untrusted locations, unsupported browsers and specific device types.
+* Report Event for Report views and exports. Blocks or requires multi-factor authentication for access to sensitive info
+ or notifies when reports are run or exported.
+ 
+ **Available Actions for a policy**:
+ * Block the operation
+ * Require a higher level of assurance using multi-factor authentication
+ * Do nothing (can be useful for testing)
+ * Opt-in for policy notifications sent via Email, In-app notification to the Salesforce app or Both email and n-app notifications.
+
+
+ 
+
+
+
+
 
