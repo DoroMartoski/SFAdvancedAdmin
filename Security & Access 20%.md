@@ -54,3 +54,24 @@ Keeps users from adding new values.
 **Dependent Picklists**
 Guide users, save UI space, and further improve data integrity with a dependent picklist
 * Filters values for one picklist based on a selection from another picklist or a checkbox
+
+**Note**
+* If you replace a picklist value with blank, existing records will not display any value anymore.
+* Custom picklist fields can be either controlling or dependent fields
+* Standard picklist field can be controlling fields but not dependent fields.
+* Multi-select picklists fields can be dependent but not controlling fields.
+* You can set default values for controlling fields but not for dependent pickists
+
+**Use formulas for Default Picklist Values**
+**When you change a multi-select picklist to a picklist that doesn’t allow multi-selection, Salesforce clears the values for that field on existing records. This makes sense, right? Because the field now only allows one value.**
+
+### Share Values with Global Value Sets
+Global value sets:
+* lets you share the same picklist values with more than one picklist field.
+* They are always restricted and can not be converted to unrestricted.
+* You can define a default value for a Global value set
+* **Individual fields that use the global value set can have their own default values, independent of the global value set’s default. This extends to formula default values, too.**
+* **If you find that a particular set of values for one field makes a good set for another field, you can promote the existing value set to a global value set.** 
+
+
+
