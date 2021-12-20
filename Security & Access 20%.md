@@ -97,6 +97,9 @@ Examples of available event types for Transaction Security policies
  * Do nothing (can be useful for testing)
  * Opt-in for policy notifications sent via Email, In-app notification to the Salesforce app or Both email and n-app notifications.
 
+### Creating transaction Security Policy through Condition Builder
+
+### Create a Transaction Security Policy Using Apex
 
  
 
