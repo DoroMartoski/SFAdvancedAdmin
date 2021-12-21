@@ -130,6 +130,19 @@ ________________________________________________________________________________
             * On the Activation window, select Lightning Experience and for Lightning Apps add Sales.
             * Save your work and click Back to exit Lightning App Builder.
 
+******************************************************************************************************************************************************************************************************************************************************
+#### Regional Settings
+* Company settings are the collection of information about your Salesforce org. Snapshot of your company's identity.
 
+**Locale Settings**: determine the display formats for date and time, user names, addresses, commas and periods in numbers.
+* The admin sets the default locale but users can set a personal locale if based in a different location.
 
-
+**Currencies*
+* As the admin for your organization, you set that “corporate currency,” which reflects the currency of your corporate HQ.
+* You also maintain the list of active currencies and their conversion rates relative to the corporate currency.
+* once a multicurrency setup is enabled, it can’t be disabled
+* standard conversion rate control is straightforward but it impacts current and closed deals.
+* For accurate historical record keeping, it’s best to avoid impacting the value of completed business. 
+* Advanced Currency Management for currency fields on opportunities and opportunity products lets you manage exchange rate start dates.
+* When advanced currency management is enabled, Visualforce <apex:inputField> and <apex:outputField> components cannot display currency fields.
+* personal currency is used as the default currency in quotas, forecasts (depending on which forecasting version they use—see  the  resources  section  for  more help), opportunities, quotes, and reports.
