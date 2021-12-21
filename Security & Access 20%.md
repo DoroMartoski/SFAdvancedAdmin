@@ -101,8 +101,34 @@ Examples of available event types for Transaction Security policies
 
 ### Create a Transaction Security Policy Using Apex
 
- 
+________________________________________________________________________________________________________________________
+*************************************************************************************************************************
 
+### Session-based Permission Sets
+* Limit functional access for select permissions in a permission set to an activated session.
+* Select **Session Activation Required checkbox** when creating permission set.
+
+**Activating Session-based Permissions Sets**
+* Session based permission sets can be activated declaratively or programmatically.
+* **The PermissionSet object in the Soap API contains a field called HasActivationRequired**, 
+* a boolean that indicates whether the permission set requires an associated active session (true) or not (false). 
+* Insert a record into the SessionPermSetActivation object with the combination of session ID and permission set to achieve the activation
+
+**Activating Session-based Permissions Sets Without Code**
+* Use a flow to activate Session-based Permission sets
+
+#### Create Easy Access to the Activation Flow
+* Couple of options
+      1. Create a simple Visualforce markup and a custom tab to run your flow
+      2. Use a Lightning app page
+            * From Setup, enter Builder in the Quick Find box, then select Lightning App Builder.
+            * Click New and select App Page then click Next.
+            * Name your page Activate Temp Access Flow and click Next.
+            * Select One Region and click Finish.
+            * Drag the Flow component onto your canvas, and for Flow, select Activate Contracts Access. (It may already be                   selected.)
+            * Click Save and select Activate.
+            * On the Activation window, select Lightning Experience and for Lightning Apps add Sales.
+            * Save your work and click Back to exit Lightning App Builder.
 
 
 
