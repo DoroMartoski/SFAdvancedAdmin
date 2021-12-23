@@ -137,7 +137,7 @@ ________________________________________________________________________________
 **Locale Settings**: determine the display formats for date and time, user names, addresses, commas and periods in numbers.
 * The admin sets the default locale but users can set a personal locale if based in a different location.
 
-**Currencies*
+**Currencies**
 * As the admin for your organization, you set that “corporate currency,” which reflects the currency of your corporate HQ.
 * You also maintain the list of active currencies and their conversion rates relative to the corporate currency.
 * once a multicurrency setup is enabled, it can’t be disabled
@@ -146,3 +146,66 @@ ________________________________________________________________________________
 * Advanced Currency Management for currency fields on opportunities and opportunity products lets you manage exchange rate start dates.
 * When advanced currency management is enabled, Visualforce <apex:inputField> and <apex:outputField> components cannot display currency fields.
 * personal currency is used as the default currency in quotas, forecasts (depending on which forecasting version they use—see  the  resources  section  for  more help), opportunities, quotes, and reports.
+
+___________________________________________________________________________________________________________________________
+***********************************************************************************************************************
+#### Account Teams:
+* Enable account teams so that your reps can create and maintain teams for their accounts.
+* Every account team member has a role on an account, such as account manager or sales rep. To track the roles that team members fill in your company, customize account team roles
+* Use the **Mass Reassign Account Teams** from Setup to Add, remove, or replace multiple account team members at a time. Update member roles and access.
+* When editing team members, users see custom fields, even if you don’t add the fields to the Add Account Team Members multiline page layout
+* If you delete a custom field, filters based on the custom field are also deleted. The results of assignment or escalation rules that rely on the custom field’s data can change.
+* If you include a default value for a custom field, the field appears blank to Lightning Experience users while they’re adding account team members. If users don’t enter a value, the default value appears on the record after they save.
+* Mass Reassign Account Teams doesn’t support custom picklists.
+* You can’t create a lookup from an object, such as an account, to an account team member
+* The Account Team related list is sorted by Team Member Name. The sort order can’t be customized, even if you specify the sort order in the Account Team Member page layout. A user can sort the related list by any other column, but when the page is refreshed, sorting reverts to the Team Member Name column.
+* If you set the org-wide default for contacts to Controlled by Parent, users can’t see or edit the Contact Access field.
+* A deleted account team member record is not moved to the Recycle Bin, and it can’t be undeleted unless the record was cascade-deleted when deleting a related account.
+* **Validation rules, flows, and Apex triggers are applied when Lightning Experience users** add their default team to an account using the Add action on the related list. However, they’re not applied when Lightning Experience users select the personal settings option to add their default team to accounts automatically.
+* Validation rules and Apex triggers are bypassed when **Salesforce Classic users** add default account teams via any method.
+* When an account team member is removed during an account ownership change, Apex triggers are bypassed
+* A team member’s level of access to an account. The access level can be Read/Write or Read Only, but it can’t be less than the default account sharing access.
+* The Contact Access field is unavailable when the organization-wide default for contacts is set to Controlled by Parent.
+
+_____________________________________________________________________________________________________________________________
+*****************************************************************************************************************************
+#### Salesforce Multi-Factor Authentication
+* Effective way to increase protection for user accounts against threats such as phishing, credential stuffing and account takeovers
+* MFA requires two or more factors, providing options for many combinations of authentication mechanisms. 2FA, on the other hand, is a subset of MFA that requires two factors only.
+* Beginning February 1, 2022, Salesforce will require customers to use MFA in order to access Salesforce products.
+* MFA requirement applies to all users who access a Salesforce product’s user interface, whether by logging in directly or via SSO
+* MFA is not required for your company's Experience Cloud sites, employee communities, help portals, or e-commerce sites/storefronts
+* All Salesforce mobile and desktop apps that are accessed via user interface logins are included in the MFA requirement
+* Risk-based authentication, also known as adaptive authentication or Continuous Adaptive Risk and Trust Assessment (CARTA), is an authentication system that continually analyzes the risk associated with a user by monitoring multiple signals coming from the user, the user’s device, and how and when the user accesses services. If the level of risk in a given situation warrants, the identity provider or authentication service automatically requires the user to satisfy additional security challenges.
+* MFA requires users to supply a strong verification method every time they log in. Email and SMS text messages aren't allowed for MFA logins because of their inherent susceptibility to attack by bad actors, so these options aren't allowed for MFA logins.
+* If a user loses or forgets their mobile device or security key, Salesforce admins can generate a temporary verification code that allows the user to log in to their account. The code can be used multiple times until it expires
+* There's only one scenario where an admin needs to coordinate with a user to have them respond to an MFA challenge: when the user's profile requires a High Assurance session at login, but the admin is logged in with a standard security session level. To avoid this situation, admins should always log in using MFA, which automatically results in a High Assurance session.
+
+**Verification methods for MFA**
+* Salesforce Authenticator mobile app (available on the App Store® or Google Play™)
+* Time-based one-time passcode (TOTP) authenticator apps, like Google Authenticator™, Microsoft Authenticator™, or Authy™
+* Security keys that support WebAuthn or U2F, such as Yubico’s YubiKey™ or Google’s Titan™ Security Key
+* Built-in authenticators, such as Touch ID®, Face ID®, or Windows Hello™
+
+**Non-accepted verification methods:
+* Email messages
+* Text messages
+* Phone calls
+* Security questions: users can satisfy the MFA login requirement by using physical security keys
+* Used on their own, trusted devices, trusted networks, or VPN aren't adequate verification methods for the MFA requirement.
+**
+
+______________________________________________________________________________________________________________________________
+******************************************************************************************************************************
+#### Configure Enterprise Territory Management Permissions and Access for Salesforce Admins and Users
+**Profiles** 
+* define how users access objects and data, and what they can do within the application. When you create users, you assign a profile to each one.
+* View and Edit Tab Settings in Permission Sets and Profiles: Tab settings specify whether a tab appears in the All Tabs page or is visible in a tab set
+* View and Edit Assigned Apps in Profiles: Assigned app settings specify the apps that users can select in the Lightning Platform app menu
+* Enable Custom Permissions in Profiles: Custom permissions give you a way to provide access to custom processes or apps
+* Edit Session Settings in Profiles: You can control session settings on a user profile basis. If you don’t configure the profile session settings, the org’s session settings apply to users of the profile. When set, the profile settings override the org-wide settings.
+* View and Edit Password Policies in Profiles: To ensure that the appropriate level of password security is used for your organization, specify password requirements with Password Policies settings for users assigned to a profile.
+
+**Permission Sets**
+* A permission set is a collection of settings and permissions that give users access to various tools and functions. Permission sets extend users’ functional access without changing their profiles.
+* Create permission sets to grant access among logical groupings of users, regardless of their primary job function.
