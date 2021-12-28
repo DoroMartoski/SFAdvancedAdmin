@@ -1,3 +1,46 @@
 ### Advanced Formulas 7h
 Using formulas, you can embed hyperlinks, perform arithmetic with existing fields, or use conditional logic to display 
 an amount.
+
+
+* formulas are case sensitive
+* the standard order of applications apply when working with numbers
+* Use the Power of 1 to find distinct counts of objects in a report by creating a power of 1 formular field on the object you want to get the distinct count and summarize the field in the report.
+* **A Date/Time value stores a year, month, day, and a time. The time is stored as GMT, but displays in the time zone of the user viewing it.**
+* If you’re subtracting two Date values, the result is a whole number. If you’re subtracting two Date/Time values, the result is a decimal value representing the number of days, hours, and minutes.
+* **A Time value is like a Date/Time value without the date. However, a Time value’s precision is in milliseconds. A Date/Time value’s precision is in seconds**.
+* **If you’re subtracting two Time values, the result is in milliseconds and is always positive.**
+* You can convert a Date/Time to a Date by using the DATEVALUE() function, which takes a Date/Time or Text value and returns a Date
+* DATETIMEVALUE() takes a Date or Text value and returns a Date/Time value, with the time set to midnight GMT
+* Time fields do not include a date. So adding 25 hours to a time value is the same as adding 1 hour. The clock restarts after 24 hours.
+* **Using helper formula fields is a great way to make your formulas short and easy to understand. A helper field does only part of a larger calculation and is referenced by the end formula field**
+
+
+**Cross-object formula**: displays data from one object on a different object
+* Members of your organization can see a formula that displays or references a cross-object field even if they do not have access to the object that the field is on
+* Cross-object formulas that reference currency fields convert the value to the currency of the record that contains the formula. If the referenced currency field is from a custom setting, the field value isn’t converted to the record’s currency
+* Salesforce allows a maximum of 10 unique relationships per object in cross-object formulas. The limit is cumulative across all formula fields, rules, and lookup filters. For example, if two different formulas on opportunities reference two different fields of an associated account, only one unique relationship exists (from opportunities to accounts)
+* You can’t reference cross-object formulas in roll-up summary fields.
+* In cross-object formulas, you can’t reference merge fields for objects related to activities. For example, merge fields for contacts and accounts aren’t available in task and event formulas.
+* In cross-object formulas, you can’t reference fields from contacts through person accounts.
+
+
+#### Picklists in formulas
+* 3 functions take picklists as arguments in formula fields: **ISPICKVAL()**, **CASE()**, and **TEXT()**
+* ISPICKVAL(picklist_field, text_value). returns boolean. ISPICKVAL() can be combined with PRIORVALUE()
+* TEXT() converts a picklist value to a **text value**. Can combine **TEXT()** with Text functions such as BEGINS(), & CONTAINS().
+* **TEXT() CANNOT BE USED ON MULTI-SELECT PICKLISTS**
+
+#### Text in formulas
+* Formulas that use the Text return type can concatenate Text values, convert numbers and dates to text, or display text conditionally
+* **TEXT() always returns Date/Time values in GMT, not the time zone of the current user or your organization.**
+* TEXT() converts a Percent, Number, Date, Date/Time, picklist, or Currency field into Text. TEXT() returns output without any formatting, commas, or currency signs. For example, TEXT(percent_value), if percent_value is set to 30%, returns 0.3
+
+##### Display an image with CASE()
+IMAGE(
+  CASE(Rating__C,
+    "Hot", "/img/samples/stars_500.gif",
+    "Warm", "/img/samples/stars_300.gif",
+    "Cold", "/img/samples/stars_100.gif",
+    "/img/samples/stars_000.gif"),
+"Unknown")
