@@ -37,10 +37,10 @@ an amount.
 * TEXT() converts a Percent, Number, Date, Date/Time, picklist, or Currency field into Text. TEXT() returns output without any formatting, commas, or currency signs. For example, TEXT(percent_value), if percent_value is set to 30%, returns 0.3
 
 ##### Display an image with CASE()
-IMAGE(
-  CASE(Rating__C,
-    "Hot", "/img/samples/stars_500.gif",
-    "Warm", "/img/samples/stars_300.gif",
-    "Cold", "/img/samples/stars_100.gif",
-    "/img/samples/stars_000.gif"),
-"Unknown")
+  IMAGE(
+    CASE(Rating__C,
+      "Hot", "/img/samples/stars_500.gif",
+      "Warm", "/img/samples/stars_300.gif",
+      "Cold", "/img/samples/stars_100.gif",
+      "/img/samples/stars_000.gif"),
+  "Unknown")
