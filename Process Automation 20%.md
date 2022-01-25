@@ -44,3 +44,22 @@ an amount.
 	  "Cold", "/img/samples/stars_100.gif",
 	  "/img/samples/stars_000.gif"),
 	"Unknown")
+
+
+* Formula fields are restricted to 3900 characters or 4000 bytes including spaces, return characters and comments.
+* Formulas cannot exceed 5000 bytes when compiled.
+* Shorted formulas by:
+	* Replacing longer logic by shorter version e.g. AND() with &&
+	* Nexted If() with CASE()
+	* Create shorter field names
+* When referencing helper field, its compile size is added to the compile size of the formula's compile size. Minimize 
+
+### Formula Return types
+* Checkbox
+* Currency
+* Date
+* Date/Time
+* Number
+* Percent
+* Text
+* Time
