@@ -79,9 +79,9 @@ create guided tutorial or wizard with screens | flow builder - has out of the bo
 set up automated tasks and processes          | flow builder.
 
 connect to external systems                   | communicate (respond and send) changes between your salesforce org and external systems  with platform events. Flow builder can also retrieve data from 3rd party systems with External Services
-----------------------------------------------|------------------------------------------------------------------------
+
 add automation to pages and apps              | flow builder
-----------------------------------------------|-------------------------------------------------------------------------
+
 re-use what you build                         | In Flow Builder, break down process logic or actions into a flow that's referenced by a Subflow element. You can reuse or reference this flow in other business processes.
 In Process Builder, call an autolaunched flow from a process to automate complex business processes.
 ----------------------------------------------|------------------------------------------------------------------------
