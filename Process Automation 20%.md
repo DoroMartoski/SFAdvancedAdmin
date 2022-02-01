@@ -74,7 +74,7 @@ an amount.
 
 use case                                      |  functionality
 ----------------------------------------------|-----------------------------------------------------------------------
-create guided tutorial or wizard with screens | flow builder - has out of the box file uploads, text boxes etc.Can add                                                 |custom lightning component
+create guided tutorial or wizard with screens | flow builder - has out of the box file uploads, text boxes etc.Can add custom lightning component
 set up automated tasks and processes          | flow builder.
 connect to external systems                   | communicate (respond and send) changes between your salesforce org and                                                 |external systems  with platform events. Flow builder can also retrieve                                                   |data from 3rd party systems with External Services
 add automation to pages and apps              | flow builder
