@@ -63,3 +63,50 @@ an amount.
 * Percent
 * Text
 * Time
+
+
+#### Salesforce flow
+* declarative process automation
+* Includes 2 tools: 
+	* flow builder: build flows
+	* Process builder: edit existing processes
+
+
+use case                                      |  functionality
+----------------------------------------------|-----------------------------------------------------------------------
+create guided tutorial or wizard with screens | flow builder - has out of the box file uploads, text boxes etc.Can add custom lightning components too.
+----------------------------------------------|-----------------------------------------------------------------------
+set up automated tasks and processes          | flow builder.
+----------------------------------------------|-----------------------------------------------------------------------
+connect to external systems                   | communicate (respond and send) changes between your salesforce org and external systems  with platform events. Flow builder can also retrieve data from 3rd party systems with External Services
+----------------------------------------------|------------------------------------------------------------------------
+add automation to pages and apps              | flow builder
+----------------------------------------------|-------------------------------------------------------------------------
+re-use what you build                         | In Flow Builder, break down process logic or actions into a flow that's referenced by a Subflow element. You can reuse or reference this flow in other business processes.
+In Process Builder, call an autolaunched flow from a process to automate complex business processes.
+----------------------------------------------|------------------------------------------------------------------------
+
+* Approval automation: use Approvals
+
+**Flows:**
+* when automating guided visual experience
+* start a behind the scenes business process
+	* onclick action
+	* edited, created, deleted actions
+	* when a platform event occurs
+	* at a specific time and frequency
+E.g. create a renewal opportunity when an opportunity is won
+
+**Process Builder:**
+* It is recommended by Salesforce to use Flow Builder for all behind the scenes automation needs
+* A record is created, updated
+* Platform event occurs
+* if/then business processes
+* Consists of a trigger, at least one criteria node, and at least one action.
+* You can configure immediate actions or schedule actions
+* **Process types**: record change, Invocable, Platform Event
+
+**Apex:**
+* When you need more complex business logic
+* Recommended to build the more complex functionality as **invocable Apex methods** and then call the Apex as an Apex action in the process or as an Apex action element in the flow.
+
