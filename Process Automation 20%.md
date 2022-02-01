@@ -84,7 +84,6 @@ add automation to pages and apps              | flow builder
 ----------------------------------------------|----------------------------------------------------------------
 re-use what you build                         | In Flow Builder, break down process logic or actions into a flow that's                                                 |referenced by a Subflow element. You can reuse or reference this flow in                                                 |other business processes.
                                               |In Process Builder, call an autolaunched flow from a process to automate                                                 |complex business processes.
-----------------------------------------------|------------------------------------------------------------------------
 
 * Approval automation: use Approvals
 
