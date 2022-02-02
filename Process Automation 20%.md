@@ -123,6 +123,8 @@ E.g. create a renewal opportunity when an opportunity is won
 
 
 #### Apex Triggers
+https://trailhead.salesforce.com/content/learn/modules/apex_triggers/apex_triggers_intro?trailmix_creator_id=strailhead&trailmix_slug=prepare-for-your-salesforce-advanced-administrator-credential
+
 * Enables you to perform custom actions before or after events to records in Salesforce.
 * You can use triggers to do anything you can do in Apex, including executing SOQL and DML or calling custom Apex methods.
 
@@ -130,4 +132,55 @@ E.g. create a renewal opportunity when an opportunity is won
     trigger TriggerName on ObjectName (trigger_events) {
         code_block
     }
+```
+* To execute a trigger before or after insert, update, delete, and undelete operations, specify multiple trigger events in a comma-separated list
+	* before insert
+	* before update
+	* before delete
+	* after insert
+	* after update
+	* after delete
+	* after undelete
+
+* Two types of triggers:
+	* **before triggers**
+	* **after triggers** 
+
+##### Context variables:
+* Use context variables to access the records that caused the trigger to fire
+	* Trigger.New: contains all the records that were inserted in insert or update triggers
+	* Trigger.Old: provides the old version of sObk=jects before they were updated in update triggers or list of deleted sObject in delete triggers
+	* **Triggers can fire when one record is inserted, or when many records are inserted in bulk via API or Apex so the context variables such as Trigger.New can contain one or multiple records.**
+
+**Calling a Class Method from a trigger:**
+* Calling methods of other classes enables code reuse, reduces the size of your triggers, and improves maintenance of your Apex code. It also allows you to use object-oriented programming
+
+**Adding Related Records:**
+* Triggers are often used to access and manage records related to the records in the trigger context—the records that caused this trigger to fire.
+* e.g.
+```
+trigger AddRelatedRecord on Account(after insert, after update) {
+    List<Opportunity> oppList = new List<Opportunity>();
+    
+    // Get the related opportunities for the accounts in this trigger
+    Map<Id,Account> acctsWithOpps = new Map<Id,Account>(
+        [SELECT Id,(SELECT Id FROM Opportunities) FROM Account WHERE Id IN :Trigger.New]);
+    
+    // Add an opportunity for each account if it doesn't already have one.
+    // Iterate through each account.
+    for(Account a : Trigger.New) {
+        System.debug('acctsWithOpps.get(a.Id).Opportunities.size()=' + acctsWithOpps.get(a.Id).Opportunities.size());
+        // Check if the account already has a related opportunity.
+        if (acctsWithOpps.get(a.Id).Opportunities.size() == 0) {
+            // If it doesn't, add a default opportunity
+            oppList.add(new Opportunity(Name=a.Name + ' Opportunity',
+                                       StageName='Prospecting',
+                                       CloseDate=System.today().addMonths(1),
+                                       AccountId=a.Id));
+        }           
+    }
+    if (oppList.size() > 0) {
+        insert oppList;
+    }
+}
 ```
