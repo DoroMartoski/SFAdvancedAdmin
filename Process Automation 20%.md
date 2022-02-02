@@ -126,6 +126,8 @@ E.g. create a renewal opportunity when an opportunity is won
 * Enables you to perform custom actions before or after events to records in Salesforce.
 * You can use triggers to do anything you can do in Apex, including executing SOQL and DML or calling custom Apex methods.
 
+```
     trigger TriggerName on ObjectName (trigger_events) {
         code_block
     }
+```
