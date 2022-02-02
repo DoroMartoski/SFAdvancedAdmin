@@ -89,6 +89,12 @@ re-use what you build                         | In Flow Builder, break down proc
 	* edited, created, deleted actions
 	* when a platform event occurs
 	* at a specific time and frequency
+* Create chatter posts, submit records for approval & send emails
+* flows can Call Apex code
+* connect your flow to an external database by using core actions.
+	* core actions let you make requests without going through the Salesforce server
+* publish platform event messages with a create Records element
+* subscribe to platform events with a Pause element. 
 E.g. create a renewal opportunity when an opportunity is won
 
 **Process Builder:**
@@ -104,3 +110,22 @@ E.g. create a renewal opportunity when an opportunity is won
 * When you need more complex business logic
 * Recommended to build the more complex functionality as **invocable Apex methods** and then call the Apex as an Apex action in the process or as an Apex action element in the flow.
 
+**Approval Process:**
+* Automates how records are approved.
+* Specify:
+	* the steps necessary for a record to be approved
+	* who approves the record at each step
+	* the actions to take based on what happens during the approval process. e.g. update fields after a record is approved or send an email notification if the request is rejected.
+* the default initial submission action after a request for approval has been sent, locks the record
+	* only approvers and admins can change the record whiles it's pending approval.
+* approval actions include: sending an email alert, updating a field on a record, creating a task, sending an outbound message.
+* Approval steps assign approval requests to various users and define the chain of approval for a particular approval process.  
+
+
+#### Apex Triggers
+* Enables you to perform custom actions before or after events to records in Salesforce.
+* You can use triggers to do anything you can do in Apex, including executing SOQL and DML or calling custom Apex methods.
+
+' trigger TriggerName on ObjectName (trigger_events) {
+   code_block
+}'
