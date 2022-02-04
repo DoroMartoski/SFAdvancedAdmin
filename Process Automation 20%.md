@@ -184,3 +184,57 @@ trigger AddRelatedRecord on Account(after insert, after update) {
     }
 }
 ```
+
+#### Trigger Exceptions
+* **addError()**: call this method on the sObject to prevent saving records when certain conditions are met.
+	* addError() method throws a fatal error inside a trigger
+	* causes the entire set of operations to roll back, except when a bulk DML is called with partial success.
+	* If a DML statement in Apex spawned the trigger, any error rolls back the entire operation. However, the runtime engine still processes every record in the operation to compile a comprehensive list of errors.
+	* If a bulk DML call in the Lightning Platform API spawned the trigger, the runtime engine sets the bad records aside. The runtime engine then attempts a partial save of the records that did not generate errors.
+
+```
+trigger AccountDeletion on Account (before delete) {
+   
+    // Prevent the deletion of accounts if they have related opportunities.
+    for (Account a : [SELECT Id FROM Account
+                     WHERE Id IN (SELECT AccountId FROM Opportunity) AND
+                     Id IN :Trigger.old]) {
+        Trigger.oldMap.get(a.Id).addError(
+            'Cannot delete account with related opportunities.');
+    }
+    
+}
+```
+
+#### Triggers and Callouts:
+* make calls to and integrate Apex code with external Web Services. Referred to as **Callouts**
+* **when making a callout from a trigger, the callout must be done asynchronously so that the trigger process doesn't block you from working while waiting for the external service's response**
+* the asynchrom=nous callout is made in a background process, and the response is received when the external service returns it
+
+**Making a callout from a trigger:**
+* call a class method that executes asynchronously - **future method** annotated with @future(callout=true)
+
+```
+public class CalloutClass {
+    @future(callout=true)
+    public static void makeCallout() {
+        HttpRequest request = new HttpRequest();
+        // Set the endpoint URL.
+        String endpoint = 'http://yourHost/yourService';
+        request.setEndPoint(endpoint);
+        // Set the HTTP verb to GET.
+        request.setMethod('GET');
+        // Send the HTTP request and get the response.
+        HttpResponse response = new HTTP().send(request);
+    }
+}
+```
+```
+trigger CalloutTrigger on Account (before insert, before update) {
+    CalloutClass.makeCallout();
+}
+```
+
+#### Bulk trigger Design Patterns
+* use bulk design patterns for processing records in triggers for better performance, use of less server resources, less likely to exceed platform limits and process large number of records.
+* 
