@@ -144,7 +144,7 @@ https://trailhead.salesforce.com/content/learn/modules/apex_triggers/apex_trigge
 
 * Two types of triggers:
 	* **before triggers**
-	* **after triggers** 
+	* **after triggers**: you can query affected records from database cos they've already been commited by the time the after trigger is fired.
 
 ##### Context variables:
 * Use context variables to access the records that caused the trigger to fire
@@ -237,4 +237,33 @@ trigger CalloutTrigger on Account (before insert, before update) {
 
 #### Bulk trigger Design Patterns
 * use bulk design patterns for processing records in triggers for better performance, use of less server resources, less likely to exceed platform limits and process large number of records.
-* 
+* Assume that there are multiple records to be operated on by the trigger.
+* make SOQL query outside of **for loops**
+* you can combine SOQL query and for loop
+* Triggers execute on batches of 200 records at a time
+
+##### Bulk DML
+* Perform DML calls on a collection of sObjects when possible.
+* Apex runtime allows up to 150 DML calls in one transaction
+
+```
+trigger AddRelatedRecord on Account(after insert, after update) {
+    List<Opportunity> oppList = new List<Opportunity>();
+    
+    // Add an opportunity for each account if it doesn't already have one.
+    // Iterate over accounts that are in this trigger but that don't have opportunities.
+    for (Account a : [SELECT Id,Name FROM Account
+                     WHERE Id IN :Trigger.New AND
+                     Id NOT IN (SELECT AccountId FROM Opportunity)]) {
+        // Add a default opportunity for this account
+        oppList.add(new Opportunity(Name=a.Name + ' Opportunity',
+                                   StageName='Prospecting',
+                                   CloseDate=System.today().addMonths(1),
+                                   AccountId=a.Id)); 
+    }
+    
+    if (oppList.size() > 0) {
+        insert oppList;
+    }
+}
+```
