@@ -111,3 +111,5 @@ If the lookup field is optional, you can specify one of three behaviors to occur
  * **Turn Off Salesforce Classic for Your Org**
   * You do this by removing the Switcher for all users in your org.
  
+### Lightning Experience Features
+#### Navigate Lightning Experience and Setup
