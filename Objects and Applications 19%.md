@@ -58,3 +58,56 @@ If the lookup field is optional, you can specify one of three behaviors to occur
 * Indirect lookup relationship fields can be created on external objects only.
 * Only objects that have a custom field with the External ID and Unique attributes are available as parent objects in indirect lookup relationships. If you don't see the desired object when you create an indirect lookup relationship field, add a custom unique, external ID field to that object.
 * If the external system uses case-sensitive values in the specified External Column Name, make sure that the parent object field is also case-sensitive. When you define the parent object’s custom field, select External ID, Unique, and Treat "ABC" and "abc" as different values (case sensitive).
+
+### Prepare for the Lightning Experience Module
+#### Lightning Experience Transition
+* The Transition Assistant guides you through each phase, stage and activity in your transition.
+* Use the Enablement Pack full of rollout resources and customizable templates to prepare for and complete a successful transition.
+
+**Phases**: Discover ---> Rollout ---> Optimize
+* **Discovery Phase:** evaluate your production org's readiness for the new interface.
+ * plan your rollout and change management strategies and aling with stakeholder on your transition goals.
+ * Calculate the ROI from transitioning to Lightning Experience
+ * Review your current Business processes - consider ways to improve them in the transition.
+ * Use the **Lightning Experience Readiness Check** to help you identify where your org stands through a personalized report that shows how to adjust your implementation.
+ * **Access the Impact of Feature Gaps**: Part of your evaluation is to identify how important upcoming features are to your business needs. Work with affected teams and users to identify gaps that are relevant for your org and the severity of each gap. You can use several methodologies when assessing impact, including assigning a numeric value to each gap, or plotting the gaps on a simple chart.
+ * Get Hands-on with Lightning Experience
+* **Plan your Lightning Experience Rollout**
+ * Pick a rollout strategy: 
+  * Gradual rollout: decide the Users and Scope of Work for Each Group in Your Rollout 
+  * Big bang
+ * Develop a Change Management Plan
+  * Start with a change impact assessment to learn how users feel about your current Salesforce implementation and what their impressions are of Lightning Experience.
+  * identify the processes and activities that change in the new interface, and work with affected stakeholders and users to assess the impact.
+  * Lightning Experience Transition Change Management Hub for help developing and implementing a change management plan. The Hub guides you through all the recommended steps and best practices for managing change throughout your org’s transition. 
+ * Define Measures for Success
+ * Pick launch date
+
+**Rollout**
+* My Domain: Create a subdomain to help manage login and authentication
+* To use Lightning Experience, users must have the Lightning Experience User permission. This permission is automatically enabled in all standard Salesforce profiles. But custom profiles don’t usually include this permission by default.
+* Use the **Lightning Experience Converter** to recreate Actions and Buttons,  VF pages.
+* Use **Magic Mover** for Notes and Attachments conversion to enahnce notes and Salesforce Files.
+* Use **Lightning Knowledge Migration tool** to move Classic knowledge base to Lightning Knowledge.
+* Use the Switch Users tool in the Lightning Experience Transition Assistant to assign the new interface as a user’s default experience, on a user-by-user basis.
+
+**Optimize**
+* Keep an eye on adoption rates: use the Lightning Usage App for insights on active Lightning Expereince Users, the number of users switching back to Salesforce Classic, most visited pages in Lightning Experience.
+* **Collect and evaluate feedback**: Poll(informal chatter poll to gather quick insights), SUrvey, Focus Groups
+* Engage with your champions
+* Monitor Your Success Metrics
+ * Reporting snapshots are a way to analyze trends over time
+* Deliver an Executive Summary
+ * Keep it to 1-2 pages maximum
+ * Showcase metrics and results
+ * Highlight any noteworthy anecdotes
+ * Share lessons learned
+ * Note any next steps still planned
+* Motivate Users to Work in Lightning Experience
+* Iterate on Your Rollout Plan
+* **Improve Your Implementation with Salesforce Optimizer**
+ * Run it in sandbox or production environments to get a personalized report with recommendations for improving features, cleaning up customizations, reducing complexity, and driving feature adoption.
+ * Some of the features that Optimizer evaluates include Apex triggers, fields, profiles, record types, and validation rules.
+ * **Turn Off Salesforce Classic for Your Org**
+  * You do this by removing the Switcher for all users in your org.
+ 
