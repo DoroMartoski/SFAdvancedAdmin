@@ -113,3 +113,29 @@ If the lookup field is optional, you can specify one of three behaviors to occur
  
 ### Lightning Experience Features
 #### Navigate Lightning Experience and Setup
+* In Lightning Experience you can even include Lightning page tabs and a utility bar that allows instant access to productivity tools, like integrated voice, in the footer of Lightning Experience
+* users can create records and access recent records and lists directly from the navigation bar for items like Opportunities.
+
+**Lightning app navigation bar** can contain:
+* Most standard objects, including Home, the main Chatter feed, Groups, and People
+* Your org’s custom objects
+* Visualforce tabs
+* Lightning component tabs
+* Canvas apps via Visualforce tabs
+* Web tabs
+* Lightning page tabs and utilities like Lightning Voice - you can enable a utility bar in your app that allows instant access to productivity tools, like integrated voice, in the Lightning Experience footer
+
+**Personalizing the navigation bar** using the enhanced editor:
+* Reorder the items already in your navigation bar.
+* Rename items you’ve added.
+* Add items to the navigation bar
+
+Notes:
+* Users can’t personalize the navigation bar of Classic apps in Lightning Experience.
+* can’t personalize the navigation bar when it contains more than 50 items
+* Items that you add to an app’s navigation bar are added to the end of users’ personalized navigation bars in the order that you added them.
+* When you remove an item from an app, that item remains in your users’ personalized navigation bars, and users can then delete it.
+* If you don’t want your users to personalize the navigation bar for a specific app, disable personalization.
+* If you don’t want your users to personalize the navigation bar for any app, disable personalization.
+* Control if temporary tabs are created when users access items outside of the app.
+* New action doesn’t appear if The New action isn’t part of the search layout for the object’s list view
