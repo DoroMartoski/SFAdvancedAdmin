@@ -169,3 +169,31 @@ These object functions aren’t listed in the Object Manager. You can access the
 * Topic Assignment Triggers
 
 **Service Setup flows offer a guided step-by-step experience to walk you through setting up various support features like email support, integrating with Twitter and Facebook, and enabling a Knowledge base**
+
+#### Sales tools
+**Opportunity Workspace**:
+* you can enhance your sales users’ workflow by customizing the sales path and the activity timeline to their needs
+* if your company uses a team selling approach, you can split your opportunity revenue by using opportunity splits in Lightning Experience.
+
+#### Path
+* guides users through each stage of your company's sales process
+* helps users stay focused on important tasks so they can close deals or complete work quickly
+* You can create a unique path for each record type for **leads, opportunities, quotes, and custom objects**.
+* Provide guidance for success content, like links to Chatter posts and videos, tips, or policy reminders—anything that can help sales reps get closer to sealing the deal.
+* Keep your system performance optimal by creating sales paths that have 20 or fewer stages.
+* Consider labeling sales paths for regions or industries, like “Steel Industry Sales Path.”
+* If you set up record types, you can have one path for each record type.
+
+#### Activity Timeline
+* tracks meetings, tasks, calls, and emails. Reps can see what they’ve done and what they still have left to do for each opportunity, lead, account, and contact.
+* The configuration of page layouts and record types affects the tabs in the activity composer. Don’t see the tabs for calls, tasks, events, or emails in the activity composer? Adjust your page layouts, record types, and user permissions.
+* In the activity timeline, you can customize the display and order of fields when an activity is expanded for events, tasks, and logged calls.
+* The description field for events and the comments field for tasks also always appear in the timeline, although they aren’t available in the compact layout.
+ 
+ #### Opportunity Kanban view
+ * select kanban from displays menu on all list views except Recently Viewed
+ * The records in the Kanban view are based on the selected list view. Reps can’t view the Kanban for Recently Viewed list views
+ * Records are separated based on record type
+ * A yellow triangle on an opportunity card can indicate three types of alerts: overdue tasks, no open activities, or no activity for 30 days
+ * Users can click the triangle to create tasks and events right from the card.
+ * Items on the board vary based on which list view is open.
