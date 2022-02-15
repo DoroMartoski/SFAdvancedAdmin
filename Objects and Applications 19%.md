@@ -139,3 +139,33 @@ Notes:
 * If you don’t want your users to personalize the navigation bar for any app, disable personalization.
 * Control if temporary tabs are created when users access items outside of the app.
 * New action doesn’t appear if The New action isn’t part of the search layout for the object’s list view
+* Use favorites to boost productivity by personalizing navigation.
+* Use **App Launcher** to find available apps.
+* you can change which apps appear in the Lightning Experience App Launcher. You can also control the order in which the apps appear from the app menu.
+* the apps that users see in their App Launcher and app menu vary depending on each app’s visibility settings and user permissions. Users see only the apps that they are authorized to see according to their profile or permission sets.
+
+#### Search
+* search results dynamically updates with matches from all searchable objects.
+* **You can also sort most search results.**
+
+#### Help Menu
+* each page has a contextual Help Menu with links to resources related to the tasks on that page and resources for getting started
+* **If an admin added custom resources for working in an org, users see those resources first**
+ * Admins and users see different sets of resources that are appropriate to their work in Salesforce.
+ * Admins can add a custom help section at the top of the Help Menu on every page in Lightning Experience. Guide users as they work in your org with links to your own URLs to websites, PDF files, videos, or Trailhead mixes. 
+ * You get to name the section and pick the resources to display.
+
+These object functions aren’t listed in the Object Manager. You can access them from elsewhere in Setup.
+* Case Comment Triggers
+* Feed Comment Triggers
+* Feed Item Triggers
+* Feed Item Layouts
+* Group Layouts
+* Group Triggers
+* Group Member Triggers
+* Group Record Triggers
+* Publisher Layouts
+* Topic Triggers
+* Topic Assignment Triggers
+
+**Service Setup flows offer a guided step-by-step experience to walk you through setting up various support features like email support, integrating with Twitter and Facebook, and enabling a Knowledge base**
