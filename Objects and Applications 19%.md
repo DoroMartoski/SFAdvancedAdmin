@@ -197,3 +197,55 @@ These object functions aren’t listed in the Object Manager. You can access the
  * A yellow triangle on an opportunity card can indicate three types of alerts: overdue tasks, no open activities, or no activity for 30 days
  * Users can click the triangle to create tasks and events right from the card.
  * Items on the board vary based on which list view is open.
+
+#### Lead Workspace
+* To convert a lead, your reps click the Converted stage in the path. Then, they either select an account or create one on the spot. Reps can also create an opportunity.
+
+#### Accounts and Contacts
+you can:
+* visualizing account relationships in an account hierarchy, seeing who reports to whom in a contact hierarchy, 
+* relate single contacts to multiple accounts without duplicating records. Contacts to Multiple Accounts feature lets you relate a single contact to multiple accounts so that you can easily track the relationships between people and businesses
+* you can customize hierarchy columns to show the information that’s most useful to your sales reps.
+* When a user transfers an account or an opportunity to a different owner, you also have the flexibility to transfer related records such as cases, just as in Salesforce Classic.
+
+#### Service Cloud in Lightning Experience
+* Split view shows a list view at the same time as workspace tabs and subtabs, letting your support agents manage multiple cases on a single screen
+
+**Lightning knowledge**
+* now a standard object
+* standard record types have replaced article types
+* knowledge component for lightning Service Console has replaced Knowledge one
+* following actions can be done on knowledge:
+ * Create an article
+ * Published articles—create a draft version or archive the article
+ * Draft articles—publish, edit, or delete
+ * Archived articles—restore or delete
+ * Bulk actions—archive, assign, publish, restore, submit for translation, and delete drafts or archived articles
+
+**Embedded chat**: Embedded chat allows customers to get quick answers to their questions by chatting with an agent while browsing your site
+* Customers fill out the brief pre-chat form, which helps agents gather basic information about the customer, like their contact information and their needs.
+
+**Service Analytics App**: shares best practice KPIs about your service data in a single place
+* the app tailors this information by role
+* Using the prebuilt dashboards in the Service Analytics app, service managers can quickly view average case closing times, customer satisfaction, and trending, historical, and peer benchmarks
+* They can also get insight into the team’s use of knowledge articles to resolve cases, and other data so they can quickly take appropriate actions.
+* Another set of dashboards—called sidebars—are specifically for support agents. For a given case, an agent can view customer history, number of cases, and CSAT. Ensure that agents have fast access to this information by embedding these sidebars on key Salesforce pages, such as the service console.
+
+#### Field Service
+* With Field Service, your agents, dispatchers, and field technicians get the tools to manage work orders, service resources, and scheduling
+* **Create service resource records that represent your field service technicians and add details about their skills, service territories, and availability.**
+* **Set up multilevel service territories that represent the regions where your technicians work.**
+* **Track your product inventory and service vehicle locations.**
+* **Schedule one-time or recurring appointments for customers and add details about technician preference and required skills.**
+* **Standardize your business’s field service tasks with maintenance plans and templates.**
+* **Keep customers informed about service progress with on-site service reports.**
+
+#### Omni-channel
+* Omni-Channel helps your service center route any type of incoming work item—including cases, chats, or leads—to your most qualified, available agents - They no longer have to pick and choose work assignments from a queue, which saves everyone time, effort, and brainpower
+* Use Omni-Channel to manage the priority of work items for agents and balance the distribution of assignments. You can also define which agents work on different types of assignments, such as leads or sales inquiries, and other assignments that help with support questions.
+* Console users can set their presence status and accept or decline work depending on your Omni-Channel settings.
+
+#### Social Customer Service
+* Social Customer Service integrates with Twitter, Facebook, Instagram, and YouTube to deliver customer conversations directly to your agents
+* Support agents get the tools to manage cases originating from social media and engage customers by responding directly in social networks.
+**Inbound and outbound social posts appear as items in the case feed, making it easy to follow conversations. Attachments to posts are also viewable right in the feed. Agents can respond to posts using the Social action in the publisher and include an attachment or a Direct Message prompt. They can also like conversations, reply privately to customers, hide comments on Facebook, and delete conversations managed by your company’s social accounts.**
