@@ -278,8 +278,64 @@ you can:
 * The search layout controls what all users see when they land on that object’s home page
 * In Lightning Experience, from Setup, find the object in the Object Manager, then scroll to its Search Layout related list and edit the Search Results search layout
 * You can also go directly to an object’s details page by selecting Edit Object from the Setup menu.
-* Your users can reorder the columns of the Recently Viewed Object list in Salesforce Classic, and the changes are reflected in Lightning Experience.
+* **Your users can reorder the columns of the Recently Viewed Object list in Salesforce Classic, and the changes are reflected in Lightning Experience.**
+
+**Cases are feed-first and display a Chatter tab first, rather than record details or related information**
 
 #### Chatter in Lightning Expereince
+* Can display date and time stamps on Case feed items
 
+#### File Management and Collaboration
+* Salesforce files support all file types
+* Files can be viewed from the files tab as well as from files related list on a record 
+* Add Files related list on object layouts.
+* file preview player in Lightning Experience provides a visually and functionally rich preview experience
+ *  includes controls for quickly downloading, sharing, or deleting the current file, uploading a new version of the file, editing file details, and **generating a public link to the file (you can delete the link to the file to stop public access to the file)**
+* Users can access sharing options from Files home, Files related lists, the file preview player, file record detail pages, and Chatter feeds
+* **you can convert attachments to files and eliminate the need for wasteful context switching. Install the  Attachments to Files tool from AppExchange and kick off bulk jobs that convert attachments to Salesforce Files**
+* Salesforce CRM Content Folders and files in libraries are available from Salesforce Files in Lightning Experience
+ * Library admins can create and manage libraries in Lightning Experience too. Content deliveries aren’t available in Lightning Experience, but link sharing is supported.
 
+#### Tasks, Events and Calendars
+##### Tasks
+* View a list of all your open tasks, showing the opportunities, accounts, and other records they’re related to. See and edit details right there on the same page.
+* **Switch to views of tasks you’ve delegated, open tasks, all overdue tasks, recently completed tasks, recently viewed tasks, recurring tasks, tasks due today, and unscheduled tasks. Quickly mark tasks complete directly from any tasks list view. Assign tasks to a queue so that you can share work more efficiently. Any member of a queue can complete a task when they have time.**
+
+##### Calendar
+* **see a list of events using the table view or find a time that works for multiple people in availability view.**
+* calendar displays all events owned by a user, including events outside a user’s business hours, in the time zone selected in your Salesforce settings.
+* To help you schedule meetings efficiently, you can take a peek at your coworkers’ calendars, too. What you see depends on your admin-set sharing settings and the level of sharing access that coworkers give.
+* Choose a field to track on any standard or custom object. The calendar displays data in that field as calendar items.
+* You can distinguish calendars by color and texture
+* Calendar views display up to 150 items, including items from calendars you create. 
+
+#### Reports & Dashboard
+* Find a report or dashboard using filtered lists and folders
+* Folders let you group related reports or dashboards, so they’re easy to find again later.
+* Open the report feed to collaborate with others on report data
+* Show or hide details like subtotals, grand totals, and record counts from your report.
+* You can also lock filters 
+##### Dashboards
+* **For dashboards - use toolbar to add components and filters, undo or redo edits, edit chart properties, and perform administrative tasks like saving. Unique to Lightning Experience, from the chart properties menu, you can customize chart colors and dashboard theme (background color).**
+* **up to nine columns and unlimited rows**
+ * Dashboard components can span as many columns and rows as you like. Drag the corners and sides of a dashboard component to make it bigger or smaller
+* Charts, tables, and metrics all dynamically resize
+* After saving a Salesforce Classic dashboard in Lightning Experience, you can’t edit it in Salesforce Classic
+
+###### Lightning table
+* Up to 10 columns and 200 rows!
+* Columns come from source reports’ report type. That means that you don’t have to add a field to the source report to show it in the table.
+* Show Chatter photos and conditional highlighting.
+* Lightning tables are dashboard filter compatible.
+* Customize dashboard color palette and theme.
+
+##### Interactive dashboards
+* View dashboards as other people if properties are set to allow you to choose whom you view the dashboard as, click Change to see the dashboard as someone else.
+* Click a chart segment or datapoint to open a filtered source report.
+* Expand dashboard components to see a larger version of it
+
+* You can view and open folders that you created in Salesforce Classic in Lightning Experience. Lightning Experience obeys sharing rules set on report and dashboard folders in Salesforce Classic.
+* Joined reports are available as a beta in Lightning Experience.
+* You can view and edit reports created in Lightning Experience in Salesforce Classic
+* **You can’t edit dashboards created in Lightning Experience in Salesforce Classic, but you can view them. Lightning tables, a table component only available in Lightning Experience, don’t appear when you view a dashboard in Salesforce Classic.**
+* Dashboards that you create in Lightning Experience that have more than three columns automatically display in Salesforce Classic with three columns (retaining all dashboard components).
