@@ -249,3 +249,37 @@ you can:
 * Social Customer Service integrates with Twitter, Facebook, Instagram, and YouTube to deliver customer conversations directly to your agents
 * Support agents get the tools to manage cases originating from social media and engage customers by responding directly in social networks.
 **Inbound and outbound social posts appear as items in the case feed, making it easy to follow conversations. Attachments to posts are also viewable right in the feed. Agents can respond to posts using the Social action in the publisher and include an attachment or a Direct Message prompt. They can also like conversations, reply privately to customers, hide comments on Facebook, and delete conversations managed by your company’s social accounts.**
+
+
+#### Custom Themes and Branding
+* Theme and brand-based colors show up in various places in the user interface, including page backgrounds, the global header, navigation bar, tabs, and buttons. You can also use a theme’s brand image on the Lightning Experience loading page. By default, orgs use the built-in Lightning Blue theme.
+* From Setup, enter Themes and Branding in the Quick Find box, then select Themes and Branding
+* Upload a brand image, and choose brand colors. Custom themes modify the brand color to make it accessible.
+
+#### The Home Page
+* From the Home page, your users can manage their day, including viewing their quarterly performance summary and the most relevant tasks and updates
+* You can also use the Lightning App Builder to create custom Home pages that appear for different profiles.
+* Give your users access to opportunity details so that they can get the most out of the Home page.
+ * **Performance Chart**: displays data based on opportunities belonging to the user or the user’s sales team. Multicurrency is supported in the performance chart.
+  * Only opportunities for the current sales quarter that are closed or open with a probability over 70% are displayed
+  * Closed—The sum of a user’s closed opportunities.
+  * Open (>70%)—The sum of a user’s open opportunities with a probability over 70%. T
+  * Goal—A user’s customizable sales goal for the quarter. This field is specific to the performance chart and has no impact on forecast quotas or any other type of goals
+* **Assistant**: shows your users things they need to address, including new leads and activities related to opportunities.
+ * Items in the Assistant appear in the following order:
+ * Leads assigned to you today
+ * Opportunities with overdue tasks
+ * Opportunities with no activity in 30 days
+ * Opportunities with no open activity
+ * Overdue opportunitiesOpportunities are overdue if they’re still open after the Close Date. These updates stop appearing if it’s been over 8 days since the Close Date.
+ * **The Assistant doesn’t show tasks due today or overdue tasks that aren’t tied to an opportunity. The Today’s Tasks component is an alternative that’s available on the Home page, and it shows a list of your tasks due today**
+
+* **an administrator can configure an object’s Recently Viewed search layout for users**
+* The search layout controls what all users see when they land on that object’s home page
+* In Lightning Experience, from Setup, find the object in the Object Manager, then scroll to its Search Layout related list and edit the Search Results search layout
+* You can also go directly to an object’s details page by selecting Edit Object from the Setup menu.
+* Your users can reorder the columns of the Recently Viewed Object list in Salesforce Classic, and the changes are reflected in Lightning Experience.
+
+#### Chatter in Lightning Expereince
+
+
