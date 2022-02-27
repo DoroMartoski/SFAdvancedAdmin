@@ -100,9 +100,10 @@ Examples of use cases for custom big objects:
 * Historical Archive
 
 You can query Big Objects using 
-* SOQL - Use SOQL if you know that your query will return a small amount of data, don’t want to wait for the results, or need the results returned immediately for use in Apex
-* Async SOQL - a way to run SOQL queries in situations where you can’t wait for the results in real time due to the sheer size of the data being queried. It is a highly scalable solution that uses a subset of SOQL commands, making it easy to use for anyone already familiar with SOQL. Async SOQL schedules and runs queries asynchronously in the background, so it can run queries that normally time out with regular SOQL.
+* **SOQL** - Use SOQL if you know that your query will return a small amount of data, don’t want to wait for the results, or need the results returned immediately for use in Apex
+* **Async SOQL** - a way to run SOQL queries in situations where you can’t wait for the results in real time due to the sheer size of the data being queried. It is a highly scalable solution that uses a subset of SOQL commands, making it easy to use for anyone already familiar with SOQL. Async SOQL schedules and runs queries asynchronously in the background, so it can run queries that normally time out with regular SOQL.
  * With Async SOQL, you can run multiple queries in the background while monitoring their completion status.
+ * Async SOQL is implemented via the Chatter REST API.
 
 **Supported field types:**
 * Lookup Relationship
@@ -118,3 +119,21 @@ You can query Big Objects using
  * The fields defined in a big object’s index determine the big object’s identity and ability to be queried
  * If you’re using SOQL to query your big object, you can query only on the fields that make up your index, in the order you defined them in
  * You can also use only specific comparison operators, depending on the field’s position in your query
+
+##### Populating Big Object
+There are two main ways of populating a big object. 
+* You can use a .csv file with Data Loader or the API,
+* entirely through Apex - use the insertImmediate method
+
+##### Querying Big Objects
+2 ways to use Async SOQL for querying Big Object
+* Filtering
+* Coarse aggregations - AVG(field), COUNT(field), COUNT_DISTINCT(field), SUM(field), MIN(field), MAX(field)
+
+##### Error Handling
+2 types of errors can occur during execution of an Async SOQL query
+* error in the query execution
+* one or more errors writing the results into the target big object
+* **Because of the volume of data involved, capturing every error is inefficient. Instead, subsets of the errors generated are captured in the BackgroundOperationResult object and retained for seven days. You can query this object with the Async SOQL query jobId to filter the errors for the specific Async SOQL query. Async SOQL job info is retained for a year.**
+
+
