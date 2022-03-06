@@ -49,8 +49,19 @@ You can set up separate sales processes for each **type of sale** that reps make
   * click the down arrow on a Kanban card, and select Edit
   * Click Show charts (1) and you see a chart or graph that summarizes the data in your list view in different ways
   * Filter the Kanban View
-  * 
+  
+  
+ Quotes: 
+ * After customer accepts a specific quote, sync the quote so that its line items appear as the opportunity’s products. This removes risk of having discrepancies between the line items in the quote and the products in the opportunity. 
 
+Quote template: use Create PDF on quote to generate a PDF copy of the quote.
+
+**Customer Contracts**:
+* Use field level security and Field Accessibility to provide access to users profiles that needs access to Contracts.
+
+
+**Territorry Management**:
+* 
 
 
 
