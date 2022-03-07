@@ -1,3 +1,7 @@
+# Security & Access
+
+#### Estimated Number of questions out of 60: 12 questions
+
 Security & Access topics:
 * Picklist Administration
 * Enhanced Transaction Security
