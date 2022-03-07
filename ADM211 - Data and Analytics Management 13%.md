@@ -1,5 +1,5 @@
-
-### Data and Analytics Management
+# Data and Analytics Management
+#### Estimated Number of questions out of 60: 7.8 (8) questions
 
 #### Formulas & Validations.
 * Formulas are case sensitive
