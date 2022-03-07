@@ -1,4 +1,5 @@
-# Estimated Number of questions out of 60: 6.6 (7) questions
+# Cloud Applications
+#### Estimated Number of questions out of 60: 6.6 (7) questions
 ### Leads & Opportunities
 
 **Leads**: people and companies identifies as potential customers
