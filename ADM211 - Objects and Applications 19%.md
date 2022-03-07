@@ -1,4 +1,6 @@
-## Objects and Applications
+# Objects and Applications
+
+#### Estimated Number of questions out of 60: 11.4 (11) questions
 
 #### Consideration for Relationships
 * Each custom object can have up to **2 master-detail relationships**
