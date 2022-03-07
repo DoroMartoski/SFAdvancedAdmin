@@ -1,3 +1,4 @@
+# Estimated Number of questions out of 60: 6.6 (7) questions
 ### Leads & Opportunities
 
 **Leads**: people and companies identifies as potential customers
@@ -89,7 +90,8 @@ Quote template: use Create PDF on quote to generate a PDF copy of the quote.
 * Field security and page layout determine which territory fields are visible and editable.
 
 ### Territory fields:
-* Account acces(view only, view and edit, view, edit, transfer and delete), case access(no access, view only, view and edit), confine opportunity assignment **(prevents the opportunities in current territory from being moved from that territory and its child territories)** , contact access(no access, view only, view only and edit), forecast manager **(the user to whom the forecasts from child and lower-level territories roll-up to)** - modifiable by clicking change on Territory detail, label, opportunity access(no access, view only, view only and edit), Parent Territory, sharing group (read only and displays only on the territory detail page). **For every territory, 2 sharing groups are created - one for the territory and another for the territory and its children**. 
+* Account access(view only, view and edit, view, edit, transfer and delete), case access(no access, view only, view and edit), confine opportunity assignment **(prevents the opportunities in current territory from being moved from that territory and its child territories)** , contact access(no access, view only, view only and edit), forecast manager **(the user to whom the forecasts from child and lower-level territories roll-up to)** - modifiable by clicking change on Territory detail, label, opportunity access(no access, view only, view only and edit), Parent Territory, sharing group (read only and displays only on the territory detail page). **For every territory, 2 sharing groups are created - one for the territory and another for the territory and its children**. 
+
 **Customizable forecasting must be enabled before territory management can be turned on**
 * Your forecast hierarchy is automatically derived from your role hierarchy when customizable forecast is enabled.
 * set default account, opportunity, contact and case access. ALso set if forecast managers can administer territories below them in the hierarchy.
@@ -143,11 +145,6 @@ from the territory, but retain ownership of opportunities in the old territory.
 **If an opportunity owner does not belong to the opportunity territory, the owner gets automatically assigned to the opportunity territory with "Active in Territory" unchecked in the Assigned Users list of the territory**
 
 
-
-
-
-
-
 **Enterprise Territorry Management**:
 * Territory: organize groups of accounts and the sales reps who work with them.
 * Territory Type: Helps you group territories according to a common denominator such as core reps versus overlay, or named accounts versus geographic territories. Every territory you create has a territory type.
@@ -157,12 +154,79 @@ from the territory, but retain ownership of opportunities in the old territory.
 * Territory model state: Indicates whether a territory is in the planning stage, in active use, or archived. You can have only one active territory model at a time, but you can create and maintain multiple models in planning or archived state to use for additional modeling or reference. Territory forecasts are based on your active territory model.
 
 
+#### Optimizing Performance:
+* Avoid Excessive Rule Evaluation - apply inherited account assignment rules to a parent's child territories.
+* Avoid Unneeded Recalculation of Access Levels - 
+ *  starting at the lowest level of the territory hierarchy first, making changes there, and then moving up the hierarchy level by level when re-assigning territories to other parent territories. this method avoids having to recalculate access levels to accounts, opportunities, contacts, and cases for the same territories.
+ * defining criteria on numeric fields, not string fields. And avoid defining numeric criteria as text 
+ * define assignment rules, make them as restrictive as possible. For example, avoid including lots of OR conditions
 
+* **use role hierarchy to represent management relationships, reporting rollups, approvals, and other hierarchical workflows.**
+ * Your role hierarchy is perfect for modeling management and Human Resources types of reporting structures, where one person reports only to another person 
+* **use the territory hierarchy to extend access to records based on users’ territory assignments**
+ * Your territory hierarchy is best for modeling a matrix reporting structure, where someone can report to multiple managers.
 
+**Assign a forecast manager to every territory for which you want rolled-up forecast amounts.**
 
+* **When a Forecast Manager Is Assigned**: forecasts for the territory are available for the forecast manager to view and adjust
+* **When a Forecast Manager Is Not Assigned**: For each forecast-enabled user assigned to the territory are available, and those users can view and adjust their own forecasts but not other users’ forecasts
 
+When criteria are based on an account’s related records, use rollup summary fields or triggers to move data to the account. Then use those fields to drive account assignment rule criteria.
 
+**Recommended to not using Enterprise Territory Management and Account Teams together.**
 
+*************************************************************************************************************************************
+
+### Paths & Workspaces
+**Paths**
+* Guides Sales reps through a company's Sales process.
+* gives reps a visual representation of the stages required for working through a sales process
+* paths can include:
+  * Key fields that reps complete before moving to the next stage in the sales process
+  * Best practices
+  * Words of encouragement to keep your reps pumped
+  * Links to relevant Chatter posts
+  * Policy reminders
+  * Even potential gotchas
+
+**Lightning knowledge Setup**:
+* Use Knowledge flow to setup knowledge
+* Create necessary page layout based on your requirement.
+* Create Record type and assign the record type to a Profile and select page layout for the Profile.
+* Update Compact layout from Object Manager for Knowledge
+
+**Validation status**: indicates the state of a knowledge article
+* Activate Validation Status field from Knowledge Settings.
+
+**Use visibility settings to determine who sees what article**:
+* **Visible in Internal App**. Internal users see these articles. Other readers don’t. All published articles are visible in the internal app for agents and admins.
+* **Visible to Customer**. Authenticated users assigned a Customer profile see these articles. Customers can view articles by logging into a self-service site, so it’s important to set up their site correctly.
+* **Visible to Partner**. Authenticated users assigned a Partner profile see these articles. Customers don’t. Just like customer-visible articles, partner articles can appear in sites that partners log into.
+* **Visible in Public Knowledgebase**. Readers see these articles without being authenticated. E.g FAQs
+
+**You can control who sees or interacts with any field in an article by using field-level security**
+
+**Close Cases with Articles**:
+* Add Knowledge to the menus on the navigation bar
+* Add Knowledge to the Lightning page for cases
+* agents can attach articles to cases
+
+**Enable Communication Channel Mappings**:
+*  map by record type to determine which fields get included in a specific kind of article
+*  Agents can email Articles to customers using the "Insert Article into Email".
+
+**Enable Knowledge Settings for Search**:
+* 
+**Map Cases to Data Categories**
+
+**Enable Feed Tracking for Knowledge**
+
+**The data category security model differs from most standard Salesforce security models. Normally you would begin with the most restrictive level of access at the base and then open up or grant access from there. However, with Data Categories this model is flipped and you'd actually start with an open security model as the default and then restrict visibility from there**
+**it's not possible to restrict data category visibility via profiles**
+**Users who are not assigned to a category’s visibility by role, permission set, or profile can only see uncategorized articles and questions unless: The user has the “View all Data” permission OR A category group has been made visible to all users on the Default Data Category Visibility page in Setup.**
+
+************************************************************************************************************************************
+### Web Chat
 
 
 
