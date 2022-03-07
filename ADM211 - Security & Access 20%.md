@@ -1,7 +1,3 @@
-@settings {
-  font-size: 100;
-}
-
 # Security & Access
 
 #### Estimated Number of questions out of 60: 12 questions
