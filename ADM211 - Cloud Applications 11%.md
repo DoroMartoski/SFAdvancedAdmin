@@ -227,7 +227,23 @@ When criteria are based on an account’s related records, use rollup summary fi
 **Users who are not assigned to a category’s visibility by role, permission set, or profile can only see uncategorized articles and questions unless: The user has the “View all Data” permission OR A category group has been made visible to all users on the Default Data Category Visibility page in Setup.**
 
 ************************************************************************************************************************************
-### Web Chat
+
+**Salesforce Service Channel wuite includes: live web chat, live chat for mobile, text messaging, video calls, social media etc.**
+
+### Web Chat- contains various aspects:
+* Chat: provides support agent tool to reach out to customers
+* Omni-channel: gets chat requests to the right agent
+* Embedded Service: chat window for customers.
+
+Functionalities:
+* Customize the UI
+* Pre-chat form to gather customer information
+* Can customize pre-chat form 
+* customer record is displayed if the customer info matches a record in Salesforce, so long as the Embedded Chat deployment uses the basic scenario or service scenario.
+* Customers can create a case through offline support when a agents are offline.
+* Transfer chat to another agent, see what customer is typing before they hit send(**sneek peek**), standardized response(**quick text**), route chat request to another agent after a certain number of seconds or if not accepted by first agent(**push timeout**), **customer timeout**(end chat with or without warning), decline reasons so that agents can select a reason for declining a chat, **visitor blocking** to block a customer spamming or violating terms of service.
+* Can provide customer **queue position** which Displays the customer’s place in line while they wait for an agent, **fill in pre-chat fields** if known, allow **file transfers**, **proactive chat invitations** 
+
 
 
 
