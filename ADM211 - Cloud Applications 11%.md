@@ -244,6 +244,16 @@ Functionalities:
 * Transfer chat to another agent, see what customer is typing before they hit send(**sneek peek**), standardized response(**quick text**), route chat request to another agent after a certain number of seconds or if not accepted by first agent(**push timeout**), **customer timeout**(end chat with or without warning), decline reasons so that agents can select a reason for declining a chat, **visitor blocking** to block a customer spamming or violating terms of service.
 * Can provide customer **queue position** which Displays the customer’s place in line while they wait for an agent, **fill in pre-chat fields** if known, allow **file transfers**, **proactive chat invitations** 
 
+### Omni-Channel
+* lets you apply consistent business practices to incoming work items, regardless of the channel
+* routes cases, leads, web chats, custom objects, and more to agents. Types of routing include
+ * **Queue based routing**: Admin assigns agents to a queue typically representing a skill. Omni-channel then assigns work items to an agent who is a member of that queue. Best for smaller orgs with limited products.
+  * configure to size and priority. Routing config determines how Omni channel routes work to agents.
+  * choose whether to push work to agents who are Least Active or Most Available. If you select Least Active, then Omni-Channel routes incoming work items to the agent with the least amount of open work. If you select Most Available, then Omni-Channel routes incoming work items to the agent with the greatest difference between work item capacity and open work items.
+  * Agent capacity looks at the number and types of work items that are assigned to an agent, and at the agent’s overall bandwidth. You give each type of work—a case, a chat, and so on—a unit of capacity that represents how much agent bandwidth it takes up. And you give the agent a total capacity that indicates when the agent is working at 100% of capacity.
 
+
+ * **skills based routing**: Admin assigns skills to agents and required skills to work item types. **Omni-channel** matches work items to agents who posses all the required skills. Best for larger orgs with many agents, products with complex skill sets and support customers in many countries and multiple languages.
+ * **External routing:** you use a 3rd party routing of your choice to route work items through Omni-channel to agents via Salesforce Service Console. API integration is required. Best for orgs that want to keep their non SF routing implementation.
 
 
