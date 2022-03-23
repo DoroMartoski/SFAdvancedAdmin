@@ -254,6 +254,11 @@ Functionalities:
 
 
  * **skills based routing**: Admin assigns skills to agents and required skills to work item types. **Omni-channel** matches work items to agents who posses all the required skills. Best for larger orgs with many agents, products with complex skill sets and support customers in many countries and multiple languages.
+  * To route work by skills, use a setup flow to define mappings between work-item field values and skills. Create one skill mapping set for each object. Skills-based routing rules support case, chat transcript, contact request, lead, messaging session, order, social post, and custom objects
+  * When Omni-Channel receives a new work item, it looks at the required skills, the work’s priority, and the routing model (Least Active or Most Available) to determine how to route the work.
+
+
  * **External routing:** you use a 3rd party routing of your choice to route work items through Omni-channel to agents via Salesforce Service Console. API integration is required. Best for orgs that want to keep their non SF routing implementation.
 
+* Omni-Channel Supervisor allows supervisors and managers to check on the health of their call center. Supervisors can see how their agents, queues, skills, and work items are doing with useful at-a-glance information like wait times, average handle times, active handle times, and more.
 
