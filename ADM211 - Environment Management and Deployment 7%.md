@@ -70,4 +70,10 @@ Releases could fall into 3 categories
 
 Release on a consistent schedule.
 
+#### Sandboxes
 
+Develop ---> developer sandbox
+Test(local test)    ---> developer sandbox
+Build release (integration) ---> developer pro sandbox
+Test release(UAT, Regression) ---> full sandbox
+release
